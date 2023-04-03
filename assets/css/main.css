@@ -847,16 +847,19 @@ ol {
 
 ol li {
 	padding-left: 0.25em;
+	display: inline;
 }
 
 ul {
 	list-style: disc;
 	margin-bottom: 2rem;
-	padding-left: 1em;
+	/* padding-left: 1em; */
 }
 
 ul li {
 	padding-left: 0.5em;
+	padding-right: 0.5em;
+	display: inline;
 }
 
 ul.alt {
@@ -1470,6 +1473,7 @@ body.is-preload #bg:before {
 
 #header nav ul li {
 	padding-left: 0;
+	padding-right: 0;
 	border-left: solid 1px #ffffff;
 }
 
@@ -1479,10 +1483,10 @@ body.is-preload #bg:before {
 
 #header nav ul li a {
 	display: block;
-	min-width: 7.5rem;
+	min-width: 10rem;
 	height: 2.75rem;
 	line-height: 2.75rem;
-	padding: 0 1.25rem 0 1.45rem;
+	/* padding: 0 1.25rem 0 1.25rem; */
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 	font-size: 0.8rem;
@@ -1820,6 +1824,11 @@ body.is-preload #footer {
 	text-align: center;
 }
 
+.tools {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
 .game {
 	margin-bottom: 3rem;
 }
@@ -1839,4 +1848,51 @@ body.is-preload #footer {
 	height: 0;
 	padding: 0;
 	overflow: hidden;
+}
+
+.btn-group button {
+	background-color: #000000;
+	/* Green background */
+	border: 1px solid rgb(255, 255, 255);
+	/* Green border */
+	color: rgb(255, 255, 255);
+	/* White text */
+	padding: 10px 24px;
+	/* Some padding */
+	cursor: pointer;
+	/* Pointer/hand icon */
+	float: left;
+	/* Float the buttons side by side */
+	text-align: center;
+	line-height: 2px;
+
+
+}
+
+.btn-group button:not(:last-child) {
+	border-right: none;
+	/* Prevent double borders */
+
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+	content: "";
+	clear: both;
+	display: table;
+
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+	background-color: #505050;
+
+}
+
+.plist {
+	padding: 0;
+	text-align: center;
+	display: contents;
+	width: fit-content;
+	margin: auto;
 }
