@@ -766,7 +766,7 @@ input[type="radio"] + label:before {
 
 .image:before {
     pointer-events: none;
-    background-image: url("../../images/overlay.png");
+    background-image: url("../../content/overlay.png");
     background-color: rgba(19, 21, 25, 0.5);
     border-radius: 4px;
     content: '';
@@ -1282,7 +1282,7 @@ button {
     -webkit-transition-delay: 0.75s;
     -ms-transition-delay: 0.75s;
     transition-delay: 0.75s;
-    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../content/overlay.png");
     background-size: auto,
     256px 256px;
     background-position: center,
@@ -1301,7 +1301,7 @@ button {
     -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
     -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-    background-image: url("../../images/bg.jpg");
+    background-image: url("../../content/bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1914,4 +1914,357 @@ body.is-preload #footer {
     display: contents;
     width: fit-content;
     margin: auto;
+}
+
+/* =====================================================================
+   PROJECT PAGE TEMPLATE
+   (used to be projects.css, now merged in here)
+   ===================================================================== */
+
+/* One-line hook under the title */
+.game .hook {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.85;
+    max-width: 36rem;
+    margin: -0.5rem auto 2rem auto;
+}
+
+/* Fact strip: label/value boxes in a grid that wraps on small screens */
+.game .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.15);   /* shows through the gaps as thin lines */
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 0 2.5rem 0;
+}
+
+.game .facts > div {
+    background: #1b1f22;                      /* same as the article background */
+    padding: 0.9rem 1.1rem;
+}
+
+.game .facts dt {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin: 0 0 0.25rem 0;
+    font-weight: 400;
+}
+
+.game .facts dd {
+    margin: 0;                                 /* "dl dd" above indents it by default */
+    font-weight: 600;
+}
+
+/* "What I built" / "About the game" headings */
+.game .section-title {
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin: 3rem 0 2rem 0;
+}
+
+/* System name inside each row */
+.game .projecttext h5 {
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    text-transform: none;
+    margin: 0 0 0.75rem 0;
+}
+
+/* Small tech line under each system */
+.game .projecttext .tech {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    margin: 0;
+}
+
+/* Keeps the "About the game" text at a readable width */
+.game .about {
+    max-width: 40rem;
+    margin: 0 auto 1rem auto;
+}
+
+/* "What I did" bullet list on the short pages.
+   "ul li" further up sets every list item to display: inline,
+   which is why the bullets ran together. This turns them back into a normal list. */
+.game .projecttext ul {
+    display: block;
+    margin: 0;
+    padding-left: 1.2rem;
+    list-style: disc outside;
+}
+
+.game .projecttext ul li {
+    display: list-item;
+    margin: 0 0 0.6rem 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Images in the project rows fill their half of the row.
+   ".image.main" further up makes them 90% wide and centred, which is
+   why the left edges didn't line up between rows. */
+.game .projectimage .image.main {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.game .projectimage .image.main img {
+    width: 100%;
+    margin: 0;
+}
+
+/* Some breathing room between the image and the text in each row */
+.game .container {
+    column-gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Phones: stack each row, image always on top */
+@media screen and (max-width: 736px) {
+
+    .game .container {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .game .container .projectimage {
+        order: -1;
+    }
+
+}
+
+/* Back button at the bottom */
+article .back {
+    text-align: center;
+    margin: 3rem 0 0 0;
+}
+
+/* Space under the hero (video or big image) before the first row */
+.game .video-container {
+    margin-bottom: 2.5rem;
+}
+
+/* Hero image on pages with no video (Deflecto, Scrap Bots) */
+.game > .image.main {
+    display: block;
+    width: 100%;
+    margin: 0 0 2.5rem 0;
+}
+
+.game > .image.main img {
+    width: 100%;
+}
+
+
+/* =====================================================================
+   PROJECTS PANEL: THUMBNAIL GRID
+   ===================================================================== */
+
+.grid-intro {
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+/* "Featured" / "University" / "Game jams" labels */
+.grid-title {
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    opacity: 0.7;
+    margin: 2.5rem 0 1rem 0;
+}
+
+/* The grid: as many columns as fit, each at least 14rem wide */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+/* Tablets: 2 per row */
+@media screen and (max-width: 980px) {
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Featured cards are bigger: fewer per row */
+.project-grid.featured {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* One card. It's a link, so the whole card is clickable */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.15);  /* overrides the dotted link underline */
+    border-radius: 4px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.03);
+    transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-2px);
+}
+
+/* Every thumbnail gets the same 16:9 shape, cropped to fill */
+.project-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.project-card .card-body {
+    padding: 0.9rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.project-card h5 {
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+}
+
+.project-card p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.project-card .card-tech {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+.project-grid.featured .project-card h5 {
+    font-size: 1.1rem;
+}
+
+/* Phones: one card per row */
+@media screen and (max-width: 480px) {
+
+    .project-grid,
+    .project-grid.featured {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .project-card,
+    .project-card:hover {
+        transition: none;
+        transform: none;
+    }
+
+}
+
+.about-panel {
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+/* A normal vertical list (the global "ul li" rule makes items inline) */
+.plain-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.plain-list li {
+    display: block;
+    padding: 0.9rem 0;
+    border-top: solid 1px rgba(255, 255, 255, 0.12);
+    line-height: 1.6;
+}
+
+.plain-list li:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+/* Code samples: file name on top, one line under it */
+.code-list li a {
+    font-family: "Courier New", monospace;
+    font-weight: 600;
+}
+
+.code-list li span {
+    display: block;
+    opacity: 0.75;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+:root {
+    --accent: #DF0050;        /* exact CV pink: borders, hover */
+    --accent-text: #FF4D8A;   /* lighter tint for small text, readable on dark */
+}
+
+/* Section labels and fact-strip labels */
+.grid-title,
+.game .facts dt {
+    color: var(--accent-text);
+    opacity: 1;
+}
+
+/* Card hover */
+.project-card:hover {
+    border-color: var(--accent);
+}
+
+/* Text links inside articles */
+#main article a:not(.button):not(.project-card):hover {
+    color: var(--accent-text);
+    border-bottom-color: var(--accent-text);
+}
+
+/* Back/other buttons: pink outline + text */
+.button:hover {
+    box-shadow: inset 0 0 0 1px var(--accent);
+    color: var(--accent-text) !important;
+}
+
+/* Header nav: separate buttons, styled like the Back button */
+#header nav ul {
+    border: 0;
+    gap: 0.75rem;
+}
+
+#header nav ul li {
+    border-left: 0;
+}
+
+#header nav ul li a {
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #ffffff;
+}
+
+#header nav ul li a:hover {
+    box-shadow: inset 0 0 0 1px var(--accent);
+    color: var(--accent-text);
+}
+
+/* Phones: stacked buttons, no divider lines between them */
+@media screen and (max-width: 480px) {
+    #header nav ul li {
+        border-top: 0;
+    }
 }

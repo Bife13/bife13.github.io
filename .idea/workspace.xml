@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e111063f-6e12-4773-8788-49a3630e0f9f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters_Title.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters__World_League_trailer.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/AroundUs/AroundUs_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/AroundUs/AroundUs_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/AroundUs/AroundUs_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Hydropop/Hydro_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Hydropop/Hydro_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Slimando/Slimando_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Slimando/Slimando_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Splitsoul/Split_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Splitsoul/Split_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Splitsoul/Split_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Abom1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Abom2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters_Character.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CV.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CV_1.0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CV_2.0.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Capture.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_BigPunch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_BigPunch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_BigPunch.h" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_BigPunch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_SawSwing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_SawSwing.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_SawSwing.h" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_SawSwing.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_SideKick.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_SideKick.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_SideKick.h" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_SideKick.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/CodeSamples/CodeSamples.zip" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/CodeSamples.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/LimbCPP.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/LimbCPP.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/LimbH.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/LimbH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Miniclip_Cover Letter_TSS.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/SawSwingCPP.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/SawSwingCPP.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/SawSwingH.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/SawSwingH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/SideKickCPP.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/SideKickCPP.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Slimers.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/Slimando/Slimando_Title.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Sousa_Tomas_CV_2025.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Sousa_Tomas_CV_2025_Old.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Sousa_Tomas_CV_2026.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Sousa_Tomas_CV_GameplayProgrammer_2025.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/co1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Celestial/Celestial_2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/co2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Celestial/Celestial_1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/km1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Knightmare/Knightmare_1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/km2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Knightmare/Knightmare_2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/overlay.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/overlay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/rs1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/RadSquad/RadSquad_1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/rs2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/RadSquad/RadSquad_2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/Deflecto/Deflecto_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/s2.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/Deflecto/Deflecto_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sb1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/ScrapBots/ScrapBots_1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sb2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/ScrapBots/ScrapBots_2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/slimers2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Slimando/Slimando_3.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/slimers3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ziniax1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Ziniax/Ziniax_1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ziniax2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Ziniax/Ziniax_2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000005845315" />
+      <entry key="S2" value="1.0049170202090034" />
+      <entry key="S5" value="1.119311457642464" />
+      <entry key="S10" value="1.3460243270046477" />
+      <entry key="S30" value="1.7866401115743529" />
+      <entry key="S60" value="2.1818031474061" />
+      <entry key="M2" value="3.3421882941943326" />
+      <entry key="M5" value="7.9999442888099415" />
+      <entry key="M10" value="15.839806071294579" />
+      <entry key="M15" value="23.692217731275015" />
+      <entry key="M30" value="42.17812379329082" />
+      <entry key="H1" value="64.05051783481574" />
+      <entry key="H2" value="88.74371424467505" />
+      <entry key="H4" value="112.24698817661125" />
+      <entry key="D1" value="144.4320381010493" />
+      <entry key="W1" value="151.7219736606396" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.102015596124174E-309" />
+      <entry key="S5" value="4.597721276979845E-124" />
+      <entry key="S10" value="4.585636447561716E-62" />
+      <entry key="S30" value="1.4968093723682007E-20" />
+      <entry key="S60" value="4.382252106479815E-10" />
+      <entry key="M2" value="8.304755985356919E-5" />
+      <entry key="M5" value="0.14706120741282128" />
+      <entry key="M10" value="2.2678353219667367" />
+      <entry key="M15" value="6.190147046952316" />
+      <entry key="M30" value="18.16087014309335" />
+      <entry key="H1" value="32.096555785693326" />
+      <entry key="H2" value="43.0254196901865" />
+      <entry key="H4" value="49.919651983892045" />
+      <entry key="D1" value="56.562192077332284" />
+      <entry key="W1" value="57.79224458369895" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.018198962288569622" />
+      <entry key="MS500" value="0.4487550256143798" />
+      <entry key="S2" value="0.8225625379907067" />
+      <entry key="S5" value="1.0338732750086024" />
+      <entry key="S10" value="1.2943147635963244" />
+      <entry key="S30" value="1.7647783442286689" />
+      <entry key="S60" value="2.1696930585126046" />
+      <entry key="M2" value="3.334178518346804" />
+      <entry key="M5" value="8.139411981020704" />
+      <entry key="M10" value="18.09547934942209" />
+      <entry key="M15" value="29.865881947298778" />
+      <entry key="M30" value="60.31894486456106" />
+      <entry key="H1" value="96.13025741313372" />
+      <entry key="H2" value="131.75786668385155" />
+      <entry key="H4" value="162.15999762263533" />
+      <entry key="D1" value="200.99293955833602" />
+      <entry key="W1" value="209.51402858669576" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3KjF9Rr4HwDQXFxbxuUU2j2yaQU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e111063f-6e12-4773-8788-49a3630e0f9f" name="Changes" comment="" />
+      <created>1792062921097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792062921097</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

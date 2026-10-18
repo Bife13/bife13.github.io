@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <title>Tomás Sousa Portfolio</title>
+    <title>Tomás Silva Sousa</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
@@ -24,7 +24,8 @@
         <div class="content">
             <div class="inner">
                 <h1>Tomás Silva Sousa</h1>
-                <p class="description">Unity & Unreal Gameplay Programmer who loves building systems that feel right to play.</p>
+                <p class="description">Unity & Unreal Gameplay Programmer who loves building systems that feel right to
+                    play.</p>
             </div>
         </div>
         <nav>
@@ -32,8 +33,9 @@
                 <!-- <li><a href="#intro">Intro</a></li> -->
                 <!-- <li><a href="#projects">Hobby Projects</a></li> -->
                 <li><a href="#projects">Projects</a></li>
-<!--                <li><a href="#code">Code</a></li>-->
+                <!--                <li><a href="#code">Code</a></li>-->
                 <li><a href="#CV">CV</a></li>
+                <li><a href="#about">About</a></li>
                 <!--                <li><a href="#contact">Contact</a></li>-->
                 <!-- <li><a href="#elements">Elements</a></li> -->
             </ul>
@@ -53,582 +55,933 @@
     <!-- Main -->
     <div id="main">
 
-        <!-- Intro -->
-        <!-- <article id="intro">
-            <h2 class="major">Intro</h2>
-            <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-            <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum
-                congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-                magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a
-                    href="#projects">awesome projects</a>.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
-                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-                libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut
-                ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor.
-                Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique
-                senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus.
-                Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-        </article> -->
+        <article id="about">
+            <h2 class="major">About</h2>
 
-        <!-- Projects -->
-        <article id="projects">
-            <h2 class="major">Projects</h2>
-            <p class="initialtext">In here you will find projects that I have worked on, either for my university,
-                for game jams, or as
-                a hobby.</p>
-            <nav class="plist">
-                <ul class="projectul">
-                    <li><a href="#abomifighters">Abomifighters</a></li>
-                    <li><a href="#slimando">Slimando</a></li>
-                    <li><a href="#zwarriors">Ziniax Warriors</a></li>
-                    <li><a href="#codyssey">Celestial Odyssey</a></li>
-                    <li><a href="#deflecto">Deflecto</a></li>
-                    <li><a href="#radsquad">RadSquad</a></li>
-                    <li><a href="#scrapbots">Scrap Bots</a></li>
-                    <li><a href="#knightmare">Knightmare</a></li>
+            <div class="about-panel">
+                <p>I'm a gameplay programmer working in Unity and Unreal. I like building the systems
+                    underneath a game, like abilities, AI and combat, and making them feel right to play.</p>
+
+                <!-- Optional: drop the "Based in Lisbon" sentence if you'd rather not say where you are -->
+                <p>I studied Game Development at IADE in Lisbon, with an Erasmus semester at Cologne Game Lab
+                    in Germany. Based in Lisbon, Portugal.</p>
+
+                <p>Alongside game development I teach it. Explaining a system to a room of teenagers is the
+                    fastest way I know to find out whether I really understand it.</p>
+
+                <h4 class="grid-title">Teaching &amp; education</h4>
+                <ul class="plain-list">
+                    <li><strong>Game Dev Workshop Leader</strong>, TUMO Lisboa · 2025 – present<br/>
+                        Unity game development workshops for ages 12–18.
+                    </li>
+                    <li><strong>Course Author</strong>, Universidade Europeia · 2025 – 2026<br/>
+                        Wrote two complete online courses for the Software Engineering degree:
+                        Multimedia Computing and Software Reuse.
+                    </li>
+                    <li><strong>Game Dev Teacher</strong>, Sharkcoders · 2024 – present<br/>
+                        Game development fundamentals for ages 4–12.
+                    </li>
+                    <!-- Add the new programme here once it starts in November -->
                 </ul>
-            </nav>
+            </div>
         </article>
 
-        <!-- Projects -->
-        <article id="code">
-            <h2 class="major">Code Examples</h2>
-            <p class="initialtext">In here you will find some samples of code that I have written.</p>
-            <div class="projectimage">
-                <span class="image code"><img src="images/SawSwingCPP.png" alt=""/></span>
+        <!-- ============================================================
+     PROJECTS PANEL: thumbnail grid
+     Replaces your current Projects <article>.
+     CHECK: keep the same id your current one has (probably "projects"),
+     otherwise the PROJECTS button in the header stops opening it.
+     Each card links to a project article by its id (#abomifighters etc.).
+     ============================================================ -->
+
+        <article id="projects">
+            <h2 class="major">Projects</h2>
+            <p class="grid-intro">Projects I've worked on professionally, at university, and in game jams.</p>
+
+            <!-- FEATURED: bigger cards. Add PromiseLand and Dead or Alive here when they're ready -->
+            <h4 class="grid-title">Featured</h4>
+            <div class="project-grid featured">
+
+                <a class="project-card" href="#abomifighters">
+                    <img src="content/Abomifighters/Abomifighters_1.jpg" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>Abomifighters: World League</h5>
+                        <p>Multiplayer arena fighter. GAS abilities, HUD, replication.</p>
+                        <p class="card-tech">ProudTurkeys · UE5 · C++</p>
+                    </div>
+                </a>
+
+                <a class="project-card" href="#slimando">
+                    <img src="content/Slimando/Slimando_2.png" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>Slimando</h5>
+                        <p>Roguelite shooter with a data-driven system for 60+ abilities.</p>
+                        <p class="card-tech">GameJamPlus Grand Final · Unity · C#</p>
+                    </div>
+                </a>
+
+                <!--
+                <a class="project-card" href="#promiseland">
+                    <img src="content/REPLACE.jpg" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>PromiseLand</h5>
+                        <p>Creature collector. Steering AI, capture, party systems.</p>
+                        <p class="card-tech">Mirage Studios · Unity · C#</p>
+                    </div>
+                </a>
+        
+                <a class="project-card" href="#deadoralive">
+                    <img src="content/REPLACE.jpg" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>Dead or Alive</h5>
+                        <p>Neo-noir space-western roguelite. Solo design and code.</p>
+                        <p class="card-tech">Solo · Unity · C#</p>
+                    </div>
+                </a>
+                -->
             </div>
-            <div class="projectimage">
-                <span class="image code"><img src="images/SawSwingH.png" alt=""/></span>
+
+            <!-- MORE PROJECTS: strongest first -->
+            <h4 class="grid-title">More projects</h4>
+            <div class="project-grid">
+
+                <a class="project-card" href="#aroundus">
+                    <img src="content/AroundUs/AroundUs_2.png" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>Around Us</h5>
+                        <p>Play as a ship's AI hunting its own crew. Crewmate AI and design.</p>
+                        <p class="card-tech">Pirate Software Jam 16 · Team of 5 · Unity</p>
+                    </div>
+                </a>
+
+                <a class="project-card" href="#zwarriors">
+                    <img src="content/Ziniax/Ziniax_1.jpeg" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>Ziniax Warriors</h5>
+                        <p>2v2 MOBA with its own matchmaking server.</p>
+                        <p class="card-tech">University · UE 4.27 · C++ · C</p>
+                    </div>
+                </a>
+
+                <a class="project-card" href="#codyssey">
+                    <img src="content/Celestial/Celestial_1.jpeg" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>Celestial Odyssey</h5>
+                        <p>Elemental action-adventure, 9-person team.</p>
+                        <p class="card-tech">University · Unity · C#</p>
+                    </div>
+                </a>
+
+                <a class="project-card" href="#deflecto">
+                    <img src="content/Deflecto/Deflecto_1.png" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>Deflecto</h5>
+                        <p>Colour-wheel deflection shooter, made solo in 72 hours.</p>
+                        <p class="card-tech">Mini Jam 111 · Solo · Unity</p>
+                    </div>
+                </a>
+
+                <a class="project-card" href="#splitsoul">
+                    <img src="content/Splitsoul/Split_2.png" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>SplitSoul</h5>
+                        <p>Psychological-horror puzzle story. All the programming.</p>
+                        <p class="card-tech">Black &amp; White Jam #9 · Duo · Unity</p>
+                    </div>
+                </a>
+
+                <a class="project-card" href="#hydropop">
+                    <img src="content/Hydropop/Hydro_1.png" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>Hydropop</h5>
+                        <p>A clicker about staying hydrated, made in 3 hours.</p>
+                        <p class="card-tech">Trijam #231 · Solo · Unity</p>
+                    </div>
+                </a>
+
+
             </div>
-            <div class="projectimage">
-                <span class="image code"><img src="images/LimbCPP.png" alt=""/></span>
-            </div>
-            <div class="projectimage">
-                <span class="image code"><img src="images/LimbH.png" alt=""/></span>
-            </div>
-            <div class="projectimage">
-                <span class="image code"><img src="images/SideKickCPP.png" alt=""/></span>
+
+            <!-- Early work -->
+            <h4 class="grid-title">Early work</h4>
+            <div class="project-grid">
+
+                <a class="project-card" href="#scrapbots">
+                    <img src="content/ScrapBots/ScrapBots_2.jpeg" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>Scrap Bots</h5>
+                        <p>Browser multiplayer robot-building game.</p>
+                        <p class="card-tech">University · JavaScript · p5.js · SQL</p>
+                    </div>
+                </a>
+
+                <a class="project-card" href="#radsquad">
+                    <img src="content/RadSquad/RadSquad_1.jpeg" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>RadSquad</h5>
+                        <p>Precision platformer with an Android companion app.</p>
+                        <p class="card-tech">University · Unity 2D · C#</p>
+                    </div>
+                </a>
+
+                <a class="project-card" href="#knightmare">
+                    <img src="content/Knightmare/Knightmare_1.jpeg" alt="" loading="lazy"/>
+                    <div class="card-body">
+                        <h5>Knightmare</h5>
+                        <p>Solo action platformer, no engine.</p>
+                        <p class="card-tech">University · Lua · LÖVE</p>
+                    </div>
+                </a>
+
             </div>
         </article>
 
         <!-- Abomifighters -->
         <article id="abomifighters">
             <div class="game" title="abomifighters">
+
+                <!-- 1. Title + one-line hook -->
                 <h3 style="text-align:center">Abomifighters: World League</h3>
-                <p class="tasks">Studio: ProudTurkeys</p>
-                <p class="tasks">Ongoing Development</p>
-                <p class="tasks">Responsabilities: Implemented gameplay mechanics, Reworked and maintained UI,
-                    Utilized industry standard Plugins such as GAS and ArcInventory
-                </p>
-                <p class="tasks">Project participation time: 6 Months (July-December)</p>
-                <p class="tools">Abomifighters: World League is still being developed with Unreal Engine 5 and will
-                    be released at a later date <a
-                            href="https://store.steampowered.com/app/1788130/Abomifighters_World_League/">here</a>
-                </p>
+                <p class="hook">A 2–4 player arena fighter where every limb you rip off is a new ability.</p>
+
+                <!-- 2. Fact strip: replaces the old centred "tasks" lines -->
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Junior Gameplay Programmer</dd>
+                    </div>
+                    <div>
+                        <dt>Studio</dt>
+                        <dd>ProudTurkeys (remote)</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>Jun 2023 – Jan 2024</dd>
+                    </div>
+                    <div>
+                        <dt>Status</dt>
+                        <dd>Development stopped</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>UE 5.2 · C++ · GAS · EOS</dd>
+                    </div>
+                    <div>
+                        <dt>Links</dt>
+                        <dd><a href="https://store.steampowered.com/app/1788130/Abomifighters_World_League/"
+                               target="_blank" rel="noopener">Steam page</a></dd>
+                    </div>
+                </dl>
+
+                <!-- 3. Hero: the trailer stays for now. Swap it for a gameplay clip later if you get one -->
                 <div class="video-container">
                     <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/1bcAgLrQNQ0?si=HJOtuM5jWSeuE95-"
+                            src="https://www.youtube.com/embed/qzwwh2HZikY"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Abomifighters Steam page video"></iframe>
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen title="Abomifighters trailer"></iframe>
                 </div>
-                <div class="container">
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/Abom1.jpeg" alt=""/></span>
-                    </div>
-                    <div class="projecttext">
-                        <p> Abomifighters is a multiplayer arcade fighting game developed with Unreal Engine 5
-                            and C++. The project is based from Lyra, and utilizes many aspects of that same project
-                            with
-                            special adaptations to fit the needs of the team.
 
-                        </p>
-                        <p>The core aspect of the game is to be able to pickup limbs to fight the other players,
-                            where
-                            each limb has a different skill, allowing player to build their character as they want.
-                            There are multiple arenas to fight in, each with different things that interact with the
-                            players,
-                            bringing some variation to the game.
-                        </p>
+                <!-- 4. What I built: one row per system, image and text swap sides each row -->
+                <h4 class="section-title">What I built</h4>
+
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/Abomifighters/Abomifighters_1.jpg"
+                                                      alt="A limb ability knocking an opponent back"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>Abilities with the Gameplay Ability System</h5>
+                        <p>Implemented limb abilities in GAS, including knockback and a distance-based stun,
+                            built from Gameplay Effects and Tags.</p>
+                        <p class="tech">C++ · GAS · Gameplay Effects &amp; Tags</p>
                     </div>
                 </div>
+
                 <div class="container">
                     <div class="projecttext">
-                        <p>Supporting 2 to 4 players, the project utilizes various plugins such as GAS, EOS,
-                            ArcInventory and others.
-                        </p>
-                        <p>Currently in development Abomifighters has a in-house only playable MVP, that has been
-                            presented in events and to publishers,
-                            showcasing the technical aspects and innovative gameplay.
-                        </p>
+                        <h5>Multiplayer HUD</h5>
+                        <p>Reworked and maintained the in-game UI: a dynamic display of each player's equipped
+                            limbs, radial cooldowns and health bars, kept in sync for up to 4 players.</p>
+                        <p class="tech">UMG · C++ · Replication</p>
                     </div>
                     <div class="projectimage">
-                        <span class="image main"><img src="images/Abom2.jpeg" alt=""/></span>
+                        <span class="image main"><img src="content/Abomifighters/Abomifighters_2.png"
+                                                      alt="The in-game HUD showing equipped limbs and cooldowns"/></span>
                     </div>
                 </div>
+
+                <div class="container">
+                    <div class="projectimage">
+                        <!-- Using the existing key art here. Swap it if you find a better frame -->
+                        <span class="image main"><img src="content/Abomifighters/Abomifighters_3.jpg"
+                                                      alt="Abomifighters key art"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>Networked gameplay</h5>
+                        <p>Debugged replication issues across UI, animations and ability execution, and verified
+                            the Server and Multicast RPCs and replicated variables the gameplay depends on.</p>
+                        <p class="tech">Replication · RPCs · EOS</p>
+                    </div>
+                </div>
+
+                <!-- 5. (Optional) A problem I solved. Uncomment if you remember a real one
+                <h4 class="section-title">A problem I solved</h4>
+                <p class="about">3–4 sentences: what was going wrong, how you tracked it down, what you changed.</p>
+                -->
+
+                <!-- 6. About the game: short, at the bottom -->
+                <h4 class="section-title">About the game</h4>
+                <p class="about">Abomifighters is a multiplayer arena fighter built on Lyra in Unreal Engine 5.
+                    Players pick up limbs to fight each other, and each limb brings its own skill, so you build
+                    your character as the match goes. The in-house MVP was shown at events and to publishers.</p>
 
             </div>
-            <nav class="plist">
-                <ul class="projectul">
-                    <li><a href="#abomifighters">Abomifighters</a></li>
-                    <li><a href="#slimando">Slimando</a></li>
-                    <li><a href="#zwarriors">Ziniax Warriors</a></li>
-                    <li><a href="#codyssey">Celestial Odyssey</a></li>
-                    <li><a href="#deflecto">Deflecto</a></li>
-                    <li><a href="#radsquad">RadSquad</a></li>
-                    <li><a href="#scrapbots">Scrap Bots</a></li>
-                    <li><a href="#knightmare">Knightmare</a></li>
-                </ul>
-            </nav>
+
+            <!-- 7. One back link instead of the full project list -->
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
         </article>
 
         <!-- Slimando -->
         <article id="slimando">
             <div class="game" title="slimando">
+
+                <!-- 1. Title + one-line hook -->
                 <h3 style="text-align:center">Slimando</h3>
-                <p class="tasks">Team: 2 Programmers</p>
-                <p class="tasks">Ongoing Development</p>
-                <p class="tasks">Responsabilities: Implemented game mechanics and systems, Documentation, Asset
-                    Implementation,
-                    Ability
-                    creation and Implementation
-                    and Balancing</p>
-                <p class="tasks">GameJamPlus 22/23 Finalist </p>
-                <p class="tools">Slimando is being developed with C# and Unity2D and is available to play <a
-                        href="https://bife13.itch.io/slimando">here</a></p>
+                <p class="hook">A top-down roguelite shooter built around 60+ abilities that combine into synergies.</p>
+
+                <!-- 2. Fact strip -->
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Gameplay Programmer</dd>
+                    </div>
+                    <div>
+                        <dt>Team</dt>
+                        <dd>2 programmers</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>2022 – 2023</dd>
+                    </div>
+                    <div>
+                        <dt>Result</dt>
+                        <dd>GameJamPlus 22/23 Grand Final</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>Unity 2D · C#</dd>
+                    </div>
+                    <div>
+                        <dt>Links</dt>
+                        <dd><a href="https://bife13.itch.io/slimando" target="_blank" rel="noopener">Play on itch.io</a>
+                        </dd>
+                    </div>
+                </dl>
+
+                <!-- 3. Hero -->
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KqjFJ7zUCBQ"
+                    <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/KqjFJ7zUCBQ"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Slimando Gameplay"></iframe>
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen title="Slimando gameplay"></iframe>
                 </div>
+
+                <!-- 4. What I built -->
+                <h4 class="section-title">What I built</h4>
+
                 <div class="container">
                     <div class="projectimage">
-                        <span class="image main"><img src="images/slimers3.jpeg" alt=""/></span>
+                        <span class="image main"><img src="content/Slimando/Slimando_1.jpeg"
+                                                      alt="Several Slimando abilities combining on screen"/></span>
                     </div>
                     <div class="projecttext">
-                        <p> A roguelite top-down shooter game made for the GameJamPlus, with another programmer
-                            currently
-                            at around 2 months of development and in contention for the European semifinal for the
-                            jam.
-                            The player controls a slime that has to fight hordes of monsters in a big arena, and as
-                            they
-                            progress through the game, they acquire new passives and skills from various schools of
-                            magic, that interact
-                            with each other forming powerful combinations allowing the player to have full control
-                            on
-                            what they play as each run</p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="projecttext">
-                        <p>One of the unique aspects of Slimando is the modular ability and passive system, which
-                            allows
-                            the player to pick their slime's abilities to suit their playstyle. This means that
-                            players can
-                            experiment with different skill combinations to find the best strategy for surviving the
-                            game's
-                            challenging waves of monsters.</p>
-                        <p>The player will encounter increasingly difficult monsters that need quick reflexes and
-                            powerful
-                            attacks to defeat, so with the game's challenging gameplay, combined with its highly
-                            customizable
-                            ability system, allows for endless replayability and high scalability for updates coming
-                            in the
-                            future</p>
-                    </div>
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/slimers2.jpeg" alt=""/></span>
+                        <h5>Data-driven skill system</h5>
+                        <p>Architected the skill system behind 60+ abilities. Abilities are composed from modular
+                            effects, so new ones are mostly data, and they combine at runtime into synergies.</p>
+                        <p class="tech">C# · ScriptableObjects · Modular effects</p>
                     </div>
                 </div>
 
+                <div class="container">
+                    <div class="projecttext">
+                        <h5>Performance with 100+ enemies</h5>
+                        <p>Optimised rendering and particle systems so the game stays stable with over a hundred
+                            enemies and their effects on screen at once.</p>
+                        <p class="tech">Unity Profiler · Particle systems · Rendering</p>
+                    </div>
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/Slimando/Slimando_2.jpeg"
+                                                      alt="A screen full of enemies in Slimando"/></span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/Slimando/Slimando_3.jpeg"
+                                                      alt="Slimando ability selection"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>Ability design &amp; balancing</h5>
+                        <p>Designed and balanced abilities alongside the programming, wrote the project
+                            documentation, and integrated all the game's assets.</p>
+                        <p class="tech">Game design · Balancing · Documentation</p>
+                    </div>
+                </div>
+
+                <!-- 5. (Optional) A problem I solved. The 100+ enemies optimisation is a good candidate
+                     if you remember what was slow and what you changed.
+                <h4 class="section-title">A problem I solved</h4>
+                <p class="about">3–4 sentences: what was slow, how you found it (Profiler?), what you changed, the result.</p>
+                -->
+
+                <!-- 6. About the game -->
+                <h4 class="section-title">About the game</h4>
+                <p class="about">Slimando started as a GameJamPlus 22/23 entry and qualified for the Grand Final.
+                    It's a top-down roguelite shooter where you build up a set of abilities over a run, and the
+                    fun comes from how they stack and combine. It's playable for free on itch.io.</p>
+
             </div>
-            <nav class="plist">
-                <ul class="projectul">
-                    <li><a href="#abomifighters">Abomifighters</a></li>
-                    <li><a href="#slimando">Slimando</a></li>
-                    <li><a href="#zwarriors">Ziniax Warriors</a></li>
-                    <li><a href="#codyssey">Celestial Odyssey</a></li>
-                    <li><a href="#deflecto">Deflecto</a></li>
-                    <li><a href="#radsquad">RadSquad</a></li>
-                    <li><a href="#scrapbots">Scrap Bots</a></li>
-                    <li><a href="#knightmare">Knightmare</a></li>
-                </ul>
-            </nav>
+
+            <!-- 7. Back link -->
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
         </article>
+
+        <!-- ============================================================
+     OTHER PROJECTS: short template
+     Each <article> replaces the one with the same id in index.html.
+     Order here = suggested order in the "Other projects" grid:
+     late uni (strongest) → jams → early uni.
+     ============================================================ -->
+
 
         <!-- Ziniax Warriors -->
         <article id="zwarriors">
             <div class="game" title="ziniax">
                 <h3 style="text-align:center">Ziniax Warriors</h3>
-                <p class="tasks">Team: 3 Programmers</p>
-                <p class="tasks">Development time: 2.5 months</p>
-                <p class="tasks">Responsabilities: Implemented game mechanics and systems, Documentation, Asset
-                    Implementation, Ability Implementation,Networking and Matchmaking server</p>
-                <p class="tools">Developed with C++ in Unreal Engine 4.27</p>
+                <p class="hook">A 2v2 sci-fi MOBA with mix-and-match abilities and its own matchmaking server.</p>
+
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Programmer</dd>
+                    </div>
+                    <div>
+                        <dt>Team</dt>
+                        <dd>3 programmers</dd>
+                    </div>
+                    <!-- Optional: add the year, e.g. "2.5 months · 2022" -->
+                    <div>
+                        <dt>When</dt>
+                        <dd>2.5 months · 5th semester</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>UE 4.27 · C++ · C / WinSock</dd>
+                    </div>
+                </dl>
+
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ddJeQcolbik"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Ziniax Warriors Trailer"></iframe>
-                </div>
-                <div class="container">
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/ziniax2.jpeg" alt=""/></span>
-                    </div>
-                    <div class="projecttext">
-                        <p> A 3D MOBA for Windows, with a sci-fi theme, that was developed for the 5th semester at
-                            my University, as a means to learn C++, C and Unreal Engine 4 while having other classes
-                            at the same time. The player is able to pick any of the 3 available characters and 3 of
-                            the available 6 abilities and fight it out in a 2 versus 2 deathmatch, where the winner
-                            of 3 rounds wins. the game. Core aspects of this project were game architecture, and how
-                            to structure the systems. within the game, as well as making it modular, so it became
-                            easier to add content to the game, in the form of skills or characters.</p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="projecttext">
-                        <p>Each of the characters in the game has their own basic attack and passive, that defines
-                            the playstyle of that character, but that doesn't stop the players from picking
-                            abilities that might not fit that style.
-                            The skill system in Ziniax Warriors allows for total freedom for the players, letting
-                            them mix and match their skills to their hearts content, which increases the
-                            possibilities for each character exponentially</p>
-                        <p>While developing this progject we had to create our own matchmaking server utilizing C
-                            and the WinSock functionalities, which allows for a large amounts of players to be able
-                            to be connected to each other. We also learned and utilized Game programming patterns in
-                            this project, specifically Factories and Observers </p>
-                    </div>
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/ziniax1.jpeg" alt=""/></span>
-                    </div>
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen title="Ziniax Warriors trailer"></iframe>
                 </div>
 
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/Ziniax/Ziniax_2.jpeg"
+                                                      alt="Ziniax Warriors gameplay"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>What I did</h5>
+                        <ul>
+                            <li>Implemented a modular skill system: 3 characters, 6 abilities, and players pick any 3,
+                                so any character can run any build.
+                            </li>
+                            <li>Built the matchmaking server in C using WinSock.</li>
+                            <li>Structured the game around Factory and Observer patterns, so new characters and skills
+                                were easy to add.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <nav class="plist">
-                <ul class="projectul">
-                    <li><a href="#abomifighters">Abomifighters</a></li>
-                    <li><a href="#slimando">Slimando</a></li>
-                    <li><a href="#zwarriors">Ziniax Warriors</a></li>
-                    <li><a href="#codyssey">Celestial Odyssey</a></li>
-                    <li><a href="#deflecto">Deflecto</a></li>
-                    <li><a href="#radsquad">RadSquad</a></li>
-                    <li><a href="#scrapbots">Scrap Bots</a></li>
-                    <li><a href="#knightmare">Knightmare</a></li>
-                </ul>
-            </nav>
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
         </article>
+
 
         <!-- Celestial Odyssey -->
         <article id="codyssey">
             <div class="game" title="celestial">
                 <h3 style="text-align:center">Celestial Odyssey</h3>
-                <p class="tasks">Team: 3 Programmers and 6 Designers/Artists</p>
-                <p class="tasks">Development time: 2.5 months</p>
-                <p class="tasks">Responsabilities: Implemented game mechanics and systems, Documentation, Asset
-                    Implementation, Ability Implementation</p>
-                <p class="tools">Developed with C# in Unity</p>
+                <p class="hook">A 3D elemental action-adventure: astral-project into the spirit world and defeat the 12
+                    Chaos Signs.</p>
+
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Programmer</dd>
+                    </div>
+                    <div>
+                        <dt>Team</dt>
+                        <dd>3 programmers, 6 designers/artists</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>2.5 months · university</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>Unity · C# · Windows &amp; Mac</dd>
+                    </div>
+                </dl>
+
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/gzhhMC6ExSM"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Celestial Odyssey Trailer"></iframe>
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen title="Celestial Odyssey trailer"></iframe>
                 </div>
+
                 <div class="container">
                     <div class="projectimage">
-                        <span class="image main"><img src="images/co1.jpeg" alt=""/></span>
+                        <span class="image main"><img src="content/Celestial/Celestial_1.jpeg"
+                                                      alt="Celestial Odyssey gameplay"/></span>
                     </div>
                     <div class="projecttext">
-                        <p> Celestial Odyssey is an immersive 3D Action-adventure game that lets players astral
-                            project
-                            into the spirit world, control the elements, and defeat all 12 Chaos Signs to restore
-                            light and equilibrium. The game draws inspiration from Monster Hunter: World, Avatar:
-                            The Last Airbender, and SpellBreak, and is targeted towards fans of open-world, action,
-                            adventure games, and astrology enthusiasts. The game is developed for Windows and Mac OS
-                            platforms.
-                        </p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="projecttext">
-                        <p>Players take on the role of Soul, their astral body, and explore different Spirit Regions
-                            to collect Sign Fragments and awaken the Chaos Signs. The main gameplay loop involves
-                            collecting sign fragments, awakening the Chaos Signs, and defeating them using the
-                            player's elemental skills. Each defeated Chaos Sign unlocks a new skill based on the
-                            enemy's main element. </p>
-                        <p>One of the main focus points of this project were to work with a big team, where the
-                            level of communication would be higher than we were used to, so as to facilitate the
-                            working process between programmers, designers, and artists.</p>
-                    </div>
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/co2.jpeg" alt=""/></span>
+                        <h5>What I did</h5>
+                        <ul>
+                            <li>Implemented the elemental abilities, where each defeated Chaos Sign unlocks a new
+                                skill based on its element.
+                            </li>
+                            <li>Implemented game mechanics and systems, and integrated assets from the 6 designers
+                                and artists.
+                            </li>
+                            <li>Wrote documentation and worked in a 9-person, cross-discipline team, the biggest
+                                I'd worked in at that point.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <nav class="plist">
-                <ul class="projectul">
-                    <li><a href="#abomifighters">Abomifighters</a></li>
-                    <li><a href="#slimando">Slimando</a></li>
-                    <li><a href="#zwarriors">Ziniax Warriors</a></li>
-                    <li><a href="#codyssey">Celestial Odyssey</a></li>
-                    <li><a href="#deflecto">Deflecto</a></li>
-                    <li><a href="#radsquad">RadSquad</a></li>
-                    <li><a href="#scrapbots">Scrap Bots</a></li>
-                    <li><a href="#knightmare">Knightmare</a></li>
-                </ul>
-            </nav>
-        </article>
-
-        <!-- Deflecto -->
-        <article id="deflecto">
-            <div class="game" title="deflecto">
-                <h3 style="text-align:center">Deflecto</h3>
-                <p class="tasks">Team: 1 Programmers</p>
-                <p class="tasks">Development time: 72 hours</p>
-                <p class="tasks">Responsabilities: Everything</p>
-                <p class="tools">Deflecto was developed with C# and Unity2D and is available to play <a
-                        href="https://bife13.itch.io/deflecto">here</a></p>
-                <div class="container">
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/s1.png" alt=""/></span>
-                    </div>
-                    <div class="projecttext">
-                        <p> An endless top-down action shooter(kind of) where you play as Deflecto, an entity with
-                            the power to deflect things and fight other versions of yourself with your own
-                            projectile. But beware, just because you can deflect it doesn't mean it won't hurt you,
-                            so make sure you are avoiding the enemies, but also your own.
-                        </p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="projecttext">
-                        <p>Control the color wheel and survive as long as you can, trying to get the highest score,
-                            carefully hitting enemies with their own color. If you hit an enemy with an opposing
-                            color, the projectile will be redirected to where it came from, whilst if it's hit with
-                            the other colors, it will go straight through them. </p>
-                    </div>
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/s2.png" alt=""/></span>
-                    </div>
-                </div>
-
-                <!-- <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sp_20eBiURk"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen title="Deflecto Gameplay"></iframe>
-                </div> -->
-            </div>
-            <nav class="plist">
-                <ul class="projectul">
-                    <li><a href="#abomifighters">Abomifighters</a></li>
-                    <li><a href="#slimando">Slimando</a></li>
-                    <li><a href="#zwarriors">Ziniax Warriors</a></li>
-                    <li><a href="#codyssey">Celestial Odyssey</a></li>
-                    <li><a href="#deflecto">Deflecto</a></li>
-                    <li><a href="#radsquad">RadSquad</a></li>
-                    <li><a href="#scrapbots">Scrap Bots</a></li>
-                    <li><a href="#knightmare">Knightmare</a></li>
-                </ul>
-            </nav>
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
         </article>
 
         <!-- RadSquad -->
         <article id="radsquad">
             <div class="game" title="radsquad">
                 <h3 style="text-align:center">RadSquad</h3>
-                <p class="tasks">Team: 3 Programmers</p>
-                <p class="tasks">Development time: 2.5 months</p>
-                <p class="tasks">Responsabilities: Implemented game mechanics and systems, Documentation, Asset
-                    Implementation</p>
-                <p class="tools">Developed with C++ in Unity2D</p>
+                <p class="hook">A fast-paced precision platformer for Windows, with an Android companion app.</p>
+
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Programmer</dd>
+                    </div>
+                    <div>
+                        <dt>Team</dt>
+                        <dd>3 programmers</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>2.5 months · early university</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>Unity 2D · C# · Android</dd>
+                    </div>
+                </dl>
+
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gzhhMC6ExSM"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sp_20eBiURk"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Celestial Odyssey Trailer"></iframe>
-                </div>
-                <div class="container">
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/rs2.jpeg" alt=""/></span>
-                    </div>
-                    <div class="projecttext">
-                        <p> RadSquad is a fast-paced precision action platformer game designed for Windows with an
-                            Android Companion app. As the owner of a protection facility for people who have been
-                            affected by radiation, your objective is to gather your strongest members and defeat the
-                            henchmen of the Radiation Extermination Group.
-                            The game offers various player mechanics, including running, jumping, air jumping, wall
-                            jumping, wall grabbing, sliding, dashing, and down dashing.
-                        </p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="projecttext">
-                        <p>The game offers a variety of characters, each with unique abilities, making certain
-                            characters better suited for each level. After completing a level, the selected
-                            character will be affected, either with radiation gained or being sent to the Infirmary.
-                            To recover a character, players must spend currency gained by completing levels. </p>
-                        <p>
-                    </div>
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/rs1.jpeg" alt=""/></span>
-                    </div>
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen title="RadSquad trailer"></iframe>
                 </div>
 
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/RadSquad/RadSquad_2.jpeg"
+                                                      alt="RadSquad gameplay"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>What I did</h5>
+                        <ul>
+                            <li>Implemented game mechanics and systems, including a movement kit with wall jumps,
+                                wall grabs, air jumps, slides, dashes and down-dashes.
+                            </li>
+                            <li>Worked on the character roster, where each character's abilities suit different
+                                levels, and the radiation/infirmary recovery loop.
+                            </li>
+                            <li>Documentation and asset implementation.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <nav class="plist">
-                <ul class="projectul">
-                    <li><a href="#abomifighters">Abomifighters</a></li>
-                    <li><a href="#slimando">Slimando</a></li>
-                    <li><a href="#zwarriors">Ziniax Warriors</a></li>
-                    <li><a href="#codyssey">Celestial Odyssey</a></li>
-                    <li><a href="#deflecto">Deflecto</a></li>
-                    <li><a href="#radsquad">RadSquad</a></li>
-                    <li><a href="#scrapbots">Scrap Bots</a></li>
-                    <li><a href="#knightmare">Knightmare</a></li>
-                </ul>
-            </nav>
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
         </article>
+
 
         <!-- Scrap Bots -->
         <article id="scrapbots">
             <div class="game" title="scrapbots">
                 <h3 style="text-align:center">Scrap Bots</h3>
-                <p class="tasks">Team: 3 Programmers</p>
-                <p class="tasks">Development time: 2.5 months</p>
-                <p class="tasks">Responsabilities: Implemented game mechanics and systems, Documentation, Asset
-                    Implementation, Developed Database code,Database management</p>
-                <p class="tools">Developed with JavaScript, P5 and SQL</p>
+                <p class="hook">A browser-based multiplayer scrapyard game: gather resources, build robots from parts,
+                    sell them.</p>
+
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Programmer</dd>
+                    </div>
+                    <div>
+                        <dt>Team</dt>
+                        <dd>3 programmers</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>2.5 months · early university</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>JavaScript · p5.js · SQL</dd>
+                    </div>
+                </dl>
+
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sp_20eBiURk"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0G5B_LLNkHY"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="RadSquad Trailer"></iframe>
-                </div>
-                <div class="container">
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/sb1.jpeg" alt=""/></span>
-                    </div>
-                    <div class="projecttext">
-                        <p>
-                            A browser-based multiplayer online scrapyard administration and robot building game is
-                            called Scrap Bots. In the game, the player inherits their grandpa's scrapyard and works
-                            to improve it by gathering materials, acquiring parts, putting together robots, and
-                            making money by selling them. The ability to upgrade the scrapyard and engage in robot
-                            combat in the arena are two additional small gameplay features in Scrap Bots.
-                        </p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="projecttext">
-                        <p>
-                            In Scrap Bots, there are three different kinds of resources: cash, oil, and gears. By
-                            upgrading the production facilities or by pressing the collect button, the user can
-                            gather resources. The gathered materials are used to upgrade structures, purchase part
-                            bundles and specific parts, and assemble robots.
-                        </p>
-                        <p>
-                            Bots are made up of five distinct parts: a head, a body, a left arm, a right arm,
-                            and legs. Attack, defense, and speed are the three defining characteristics for each
-                            component. The player can purchase three various sets of parts bundles or individual
-                            parts to add to their collection. The player must use five various parts and combine
-                            them to build a robot with the desired stats.
-                        </p>
-                    </div>
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/sb2.jpeg" alt=""/></span>
-                    </div>
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen title="Scrapbots trailer"></iframe>
                 </div>
 
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/ScrapBots/ScrapBots_1.jpeg"
+                                                      alt="Scrap Bots robot building"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>What I did</h5>
+                        <ul>
+                            <li>Wrote the database code and managed the database.</li>
+                            <li>Implemented game mechanics and systems: three resource types, part bundles, and
+                                robots built from 5 parts with attack, defence and speed stats.
+                            </li>
+                            <li>Documentation and asset implementation.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <nav class="plist">
-                <ul class="projectul">
-                    <li><a href="#abomifighters">Abomifighters</a></li>
-                    <li><a href="#slimando">Slimando</a></li>
-                    <li><a href="#zwarriors">Ziniax Warriors</a></li>
-                    <li><a href="#codyssey">Celestial Odyssey</a></li>
-                    <li><a href="#deflecto">Deflecto</a></li>
-                    <li><a href="#radsquad">RadSquad</a></li>
-                    <li><a href="#scrapbots">Scrap Bots</a></li>
-                    <li><a href="#knightmare">Knightmare</a></li>
-                </ul>
-            </nav>
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
         </article>
+
 
         <!-- Knightmare -->
         <article id="knightmare">
             <div class="game" title="knightmare">
                 <h3 style="text-align:center">Knightmare</h3>
-                <p class="tasks">Team: 1 Programmer</p>
-                <p class="tasks">Development time: 2.5 months</p>
-                <p class="tasks">Responsabilities: Everything</p>
-                <p class="tools">Developed with Lua in Love2D</p>
+                <p class="hook">A 2D action platformer about a disgraced knight fighting through a demon-infested
+                    kingdom.</p>
+
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Solo</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>2.5 months · early university</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>Lua · LÖVE (Love2D)</dd>
+                    </div>
+                </dl>
+
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0G5B_LLNkHY"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9S-1x4A5JcQ"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen title="Scrap Bots Trailer"></iframe>
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen title="Knightmare demo"></iframe>
                 </div>
+
                 <div class="container">
                     <div class="projectimage">
-                        <span class="image main"><img src="images/km1.jpeg" alt=""/></span>
+                        <span class="image main"><img src="content/Knightmare/Knightmare_2.jpeg"
+                                                      alt="Knightmare gameplay"/></span>
                     </div>
                     <div class="projecttext">
-                        <p>
-                            Knightmare is an action-packed 2D platformer game with roguelite elements set in a
-                            medieval fantasy world filled with magic and dangerous creatures. In the game, you play
-                            as a prince who was once a leading knight in the kingdom's army, but was wrongfully
-                            imprisoned by the king for trying to uncover the truth about certain people in the Royal
-                            Family. After escaping his cell during a demon attack on the castle, the knight sets out
-                            on a quest to defeat the demon king's minions and their leader to redeem his honor and
-                            prove his innocence.
-                        </p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="projecttext">
-                        <p>
-                            Throughout the game, players will explore various levels of increasing difficulty, each
-                            with its own unique theme based around the kingdom, and battle a variety of enemies
-                            using their combat skills and magical abilities.
-                        </p>
-                    </div>
-                    <div class="projectimage">
-                        <span class="image main"><img src="images/km2.jpeg" alt=""/></span>
+                        <h5>What I did</h5>
+                        <ul>
+                            <li>Designed and programmed the whole game solo in Lua with LÖVE, with no engine editor.
+                            </li>
+                            <li>Built themed levels of increasing difficulty, with melee combat and magic abilities.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <nav class="plist">
-                <ul class="projectul">
-                    <li><a href="#abomifighters">Abomifighters</a></li>
-                    <li><a href="#slimando">Slimando</a></li>
-                    <li><a href="#zwarriors">Ziniax Warriors</a></li>
-                    <li><a href="#codyssey">Celestial Odyssey</a></li>
-                    <li><a href="#deflecto">Deflecto</a></li>
-                    <li><a href="#radsquad">RadSquad</a></li>
-                    <li><a href="#scrapbots">Scrap Bots</a></li>
-                    <li><a href="#knightmare">Knightmare</a></li>
-                </ul>
-            </nav>
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
         </article>
+
+        <!-- Around Us -->
+        <article id="aroundus">
+            <div class="game" title="aroundus">
+                <h3 style="text-align:center">Around Us</h3>
+                <p class="hook">You're the ship's AI, about to be replaced, and the crew has to go before the update
+                    does.</p>
+
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Programmer &amp; designer</dd>
+                    </div>
+                    <div>
+                        <dt>Team</dt>
+                        <dd>5 people</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>Pirate Software Game Jam 16</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>Unity · C#</dd>
+                    </div>
+                    <div>
+                        <dt>Links</dt>
+                        <dd><a href="https://izmaost.itch.io/around-us" target="_blank" rel="noopener">Play on
+                            itch.io</a></dd>
+                    </div>
+                </dl>
+
+                <span class="image main"><img src="content/AroundUs/AroundUs_2.png"
+                                              alt="Around Us: watching the crew through the ship's cameras"/></span>
+
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/AroundUs/AroundUs_3.png"
+                                                      alt="Around Us gameplay"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>What I did</h5>
+                        <ul>
+                            <li>Programmed the crewmate AI the whole game depends on: the crew go about the ship
+                                while you track them through the cameras, waiting for one to let their guard down.
+                            </li>
+                            <li>Programmed the main scene and worked on the game design.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
+        </article>
+
+
+        <!-- SplitSoul -->
+        <article id="splitsoul">
+            <div class="game" title="splitsoul">
+                <h3 style="text-align:center">SplitSoul</h3>
+                <p class="hook">A short top-down horror puzzle story about two people who seem to share one soul.</p>
+
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Programmer</dd>
+                    </div>
+                    <div>
+                        <dt>Team</dt>
+                        <dd>Programmer + artist</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>Black &amp; White Jam #9</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>Unity · C#</dd>
+                    </div>
+                    <div>
+                        <dt>Links</dt>
+                        <dd><a href="https://bife13.itch.io/splitsoul" target="_blank" rel="noopener">Play on
+                            itch.io</a></dd>
+                    </div>
+                </dl>
+
+                <span class="image main"><img src="content/Splitsoul/Split_2.png" alt="SplitSoul gameplay"/></span>
+
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/Splitsoul/Split_3.png"
+                                                      alt="SplitSoul dialogue or driving minigame"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>What I did</h5>
+                        <ul>
+                            <li>Did all the programming: room exploration, a dialogue system, inventory and
+                                objectives, and a driving minigame.
+                            </li>
+                            <li>Built it around the jam theme “Death is a new beginning”, loosely based on a
+                                true story.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
+        </article>
+
+
+        <!-- Deflecto -->
+        <article id="deflecto">
+            <div class="game" title="deflecto">
+                <h3 style="text-align:center">Deflecto</h3>
+                <p class="hook">An endless top-down shooter where you fight copies of yourself with your own deflected
+                    shots.</p>
+
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Solo</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>Mini Jam 111 · 72 hours</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>Unity 2D · C#</dd>
+                    </div>
+                    <div>
+                        <dt>Links</dt>
+                        <dd><a href="https://bife13.itch.io/deflecto" target="_blank" rel="noopener">Play on itch.io</a>
+                        </dd>
+                    </div>
+                </dl>
+
+                <span class="image main"><img src="content/Deflecto/Deflecto_1.png" alt="Deflecto gameplay"/></span>
+
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/Deflecto/Deflecto_2.png"
+                                                      alt="Deflecto colour wheel in action"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>What I did</h5>
+                        <ul>
+                            <li>Programming, art and sound effects, solo, in 72 hours (music by Kubbi).</li>
+                            <li>Built for the theme “Colors” with the limitation “You are your own enemy”:
+                                the opposing colour sends a projectile back where it came from, any other colour
+                                lets it pass straight through.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
+        </article>
+
+
+        <!-- Hydropop -->
+        <article id="hydropop">
+            <div class="game" title="hydropop">
+                <h3 style="text-align:center">Hydropop</h3>
+                <p class="hook">Click the bubbles to stay hydrated, but don't overdo it.</p>
+
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Solo</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>Trijam #231 · 3 hours</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>Unity · C#</dd>
+                    </div>
+                    <div>
+                        <dt>Links</dt>
+                        <dd><a href="https://bife13.itch.io/hydropop" target="_blank" rel="noopener">Play on itch.io</a>
+                        </dd>
+                    </div>
+                </dl>
+
+                <span class="image main"><img src="content/Hydropop/Hydro_1.png" alt="Hydropop gameplay"/></span>
+
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/Hydropop/Hydro_2.png"
+                                                      alt="Hydropop during an event"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>What I did</h5>
+                        <ul>
+                            <li>Made the whole game solo in 3 hours.</li>
+                            <li>Random events speed the game up or slow it down, and working out what each one
+                                does is part of the challenge.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
+        </article>
+
+
+        <!-- ============================================================
+             BLANK JAM TEMPLATE: copy this for each new jam game.
+             Change the id (no spaces), then fill in every REPLACE.
+             ============================================================ -->
+        <!--
+        <article id="REPLACE-id">
+            <div class="game" title="REPLACE-id">
+                <h3 style="text-align:center">REPLACE Game Name</h3>
+                <p class="hook">REPLACE: one sentence on what makes the game interesting.</p>
+        
+                <dl class="facts">
+                    <div><dt>Role</dt><dd>REPLACE: Solo / Programmer</dd></div>
+                    <div><dt>When</dt><dd>REPLACE: 48-hour jam · Jam Name</dd></div>
+                    <div><dt>Tech</dt><dd>REPLACE: Unity 2D · C#</dd></div>
+                    <div><dt>Links</dt><dd><a href="REPLACE_ITCH_URL" target="_blank" rel="noopener">Play on itch.io</a></dd></div>
+                </dl>
+        
+                <span class="image main"><img src="content/REPLACE-1.png" alt="REPLACE Game Name gameplay"/></span>
+        
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/REPLACE-2.png" alt="REPLACE"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>What I did</h5>
+                        <ul>
+                            <li>REPLACE: the most interesting mechanic you built.</li>
+                            <li>REPLACE: anything else worth knowing (jam ranking, theme, constraint).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
+        </article>
+        -->
 
         <!-- CV -->
         <article id="CV">
             <h2 class="major">CV</h2>
 
             <center>
-                <embed src="https://drive.google.com/file/d/1VfxEa3aSu97EGQFc7jhI4Xm7AfqTQrII/preview" width="100%"
-                       height="1200px" scrolling="no">
+                <embed src="https://drive.google.com/file/d/1ZO7YFga45FZdemozlO2WkaBdA722VVQb/preview"
+                       width="100%" height="1100px">
             </center>
-            <!-- <iframe title="CV" src="https://drive.google.com/file/d/1VfxEa3aSu97EGQFc7jhI4Xm7AfqTQrII/preview"
-                width="100%" ; height="1200px" ;></iframe> -->
 
-            <p></p>
+            <p style="text-align: center;">
+                <a href="https://drive.google.com/file/d/1ZO7YFga45FZdemozlO2WkaBdA722VVQb/view?usp=sharing"
+                   target="_blank">Open / download CV</a>
+            </p>
         </article>
-        <!-- Contact -->
-        <!--        <article id="contact">-->
-        <!--            <h2 class="major">Contact</h2>-->
-        <!--            <div class="test">-->
-        <!--                <ul class="icons">-->
-        <!--                    <li><a href="https://www.linkedin.com/in/tssousa/" class="icon brands fa-linkedin"></a></li>-->
-        <!--                    <li><a href="https://github.com/Bife13" class="icon brands fa-github"></a></li>-->
-        <!--                    <li><a href="https://bife13.itch.io/" class="fab fa-itch-io fa-lg"></a></li>-->
-        <!--                </ul>-->
-        <!--            </div>-->
-
-        <!--        </article>-->
     </div>
 
     <!-- Footer -->
