@@ -11,65 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e111063f-6e12-4773-8788-49a3630e0f9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters_Title.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters__World_League_trailer.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/AroundUs/AroundUs_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/AroundUs/AroundUs_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/AroundUs/AroundUs_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Hydropop/Hydro_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Hydropop/Hydro_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Slimando/Slimando_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Slimando/Slimando_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Splitsoul/Split_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Splitsoul/Split_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/Splitsoul/Split_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Abom1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Abom2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Abomifighters/Abomifighters_Character.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CV.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CV_1.0.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CV_2.0.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Capture.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_BigPunch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_BigPunch.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_BigPunch.h" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_BigPunch.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_SawSwing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_SawSwing.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_SawSwing.h" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_SawSwing.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_SideKick.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_SideKick.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CodeSamples/AbomGameplayAbility_SideKick.h" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/AbomGameplayAbility_SideKick.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CodeSamples/CodeSamples.zip" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/CodeSamples.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LimbCPP.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/LimbCPP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LimbH.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/LimbH.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Miniclip_Cover Letter_TSS.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/SawSwingCPP.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/SawSwingCPP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/SawSwingH.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/SawSwingH.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/SideKickCPP.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/CodeSamples/SideKickCPP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Slimers.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/Slimando/Slimando_Title.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Sousa_Tomas_CV_2025.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Sousa_Tomas_CV_2025_Old.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Sousa_Tomas_CV_2026.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Sousa_Tomas_CV_GameplayProgrammer_2025.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/content/bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/co1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Celestial/Celestial_2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/co2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Celestial/Celestial_1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/km1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Knightmare/Knightmare_1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/km2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Knightmare/Knightmare_2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/overlay.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/overlay.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/rs1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/RadSquad/RadSquad_1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/rs2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/RadSquad/RadSquad_2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/Deflecto/Deflecto_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/s2.png" beforeDir="false" afterPath="$PROJECT_DIR$/content/Deflecto/Deflecto_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sb1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/ScrapBots/ScrapBots_1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sb2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/ScrapBots/ScrapBots_2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/slimers2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Slimando/Slimando_3.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/slimers3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ziniax1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Ziniax/Ziniax_1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ziniax2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/content/Ziniax/Ziniax_2.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
