@@ -2268,3 +2268,5 @@ article .back {
         border-top: 0;
     }
 }
+
+#header nav.use-middle:after { display: none; }

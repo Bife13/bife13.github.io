@@ -33,8 +33,8 @@
                 <!-- <li><a href="#intro">Intro</a></li> -->
                 <!-- <li><a href="#projects">Hobby Projects</a></li> -->
                 <li><a href="#projects">Projects</a></li>
-                <!--                <li><a href="#code">Code</a></li>-->
                 <li><a href="#CV">CV</a></li>
+                <li><a href="#code">Code</a></li>
                 <li><a href="#about">About</a></li>
                 <!--                <li><a href="#contact">Contact</a></li>-->
                 <!-- <li><a href="#elements">Elements</a></li> -->
@@ -85,6 +85,50 @@
                 </ul>
             </div>
         </article>
+
+        <article id="code">
+            <h2 class="major">Code</h2>
+
+            <p>Code I'm happy for people to read. Each link goes straight to the file on GitHub.</p>
+
+            <h4 class="grid-title">2D Turn-Based RPG · Unity 6 · C#</h4>
+            <p>A data-driven turn-based combat framework: abilities, conditions and items are built as data
+                in the editor, not new code.
+                <a href="https://github.com/bife13/2D-Turn-Based-RPG" target="_blank" rel="noopener">See the repo</a>
+            </p>
+
+            <ul class="plain-list code-list">
+                <li>
+                    <a href="https://github.com/bife13/2D-Turn-Based-RPG/blob/main/Assets/Scripts/Ability.cs"
+                       target="_blank" rel="noopener">Ability.cs</a>
+                    <span>Abilities as ScriptableObjects built from modules (damage, heal, conditions) with
+                before/execute/after hooks, so new abilities are data, not code.</span>
+                </li>
+                <li>
+                    <a href="https://github.com/bife13/2D-Turn-Based-RPG/blob/main/Assets/Scripts/Unit/UnitConditions.cs"
+                       target="_blank" rel="noopener">UnitConditions.cs</a>
+                    <span>Status effects: application chance, start/end-of-turn processing, and cleansing.</span>
+                </li>
+                <li>
+                    <a href="https://github.com/bife13/2D-Turn-Based-RPG/blob/main/Assets/Scripts/Managers/CombatManager.cs"
+                       target="_blank" rel="noopener">CombatManager.cs</a>
+                    <span>The coroutine-driven round and turn loop.</span>
+                </li>
+                <li>
+                    <a href="https://github.com/bife13/2D-Turn-Based-RPG/blob/main/Assets/Editor/ConditionEditor.cs"
+                       target="_blank" rel="noopener">ConditionEditor.cs</a>
+                    <span>Custom inspector that finds every condition effect type through reflection, so
+                designers pick effects from a list.</span>
+                </li>
+                <li>
+                    <a href="https://github.com/bife13/2D-Turn-Based-RPG/blob/main/Assets/Editor/ItemEditorWindow.cs"
+                       target="_blank" rel="noopener">ItemEditorWindow.cs</a>
+                    <span>An editor window for creating and editing items without touching assets by hand.</span>
+                </li>
+            </ul>
+            <!-- Later: add a block like the one above for Dead or Alive once that repo is public -->
+        </article>
+
 
         <!-- ============================================================
      PROJECTS PANEL: thumbnail grid
