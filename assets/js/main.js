@@ -7,10 +7,7 @@
 		$footer = $('#footer'),
 		$main = $('#main'),
 		$main_articles = $main.children('article');
-
-	console.log("AAAAAAAAAAA");
-	console.log($main_articles.length);
-
+	
 	// Breakpoints.
 	breakpoints({
 		xlarge: ['1281px', '1680px'],
@@ -22,8 +19,8 @@
 	});
 
 	// Play initial animations on page load.
-	$window.on('load', function () {
-		window.setTimeout(function () {
+	$(function() {
+		window.setTimeout(function() {
 			$body.removeClass('is-preload');
 		}, 100);
 	});

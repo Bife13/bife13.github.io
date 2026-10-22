@@ -14,6 +14,25 @@
     <!--	</noscript>-->
 </head>
 
+<script>
+    function playOpenArticleVideos() {
+        var openId = location.hash.slice(1);
+        document.querySelectorAll('video[data-autoplay]').forEach(function (v) {
+            var article = v.closest('article');
+            if (article && article.id === openId) {
+                if (!v.getAttribute('src')) v.src = v.dataset.src;
+                v.play().catch(function () {
+                });
+            } else {
+                v.pause();
+            }
+        });
+    }
+
+    window.addEventListener('hashchange', playOpenArticleVideos);
+    document.addEventListener('DOMContentLoaded', playOpenArticleVideos);
+</script>
+
 <body class="is-preload">
 
 <!-- Wrapper -->
@@ -164,17 +183,17 @@
                     </div>
                 </a>
 
-                <!--
                 <a class="project-card" href="#promiseland">
-                    <img src="content/REPLACE.jpg" alt="" loading="lazy"/>
+                    <img src="content/PromiseLand/PromiseLand_Card.png" alt="" loading="lazy"/>
                     <div class="card-body">
-                        <h5>PromiseLand</h5>
-                        <p>Creature collector. Steering AI, capture, party systems.</p>
-                        <p class="card-tech">Mirage Studios · Unity · C#</p>
+                        <h5>PromiseLand <small>(working title)</small></h5>
+                        <p>Real-time creature-collector. Timeline skill system, creature AI and capture.</p>
+                        <p class="card-tech">Mirage Studios · Unity 6 · C#</p>
                     </div>
                 </a>
-        
-                <a class="project-card" href="#deadoralive">
+
+                <!--
+                    <a class="project-card" href="#deadoralive">
                     <img src="content/REPLACE.jpg" alt="" loading="lazy"/>
                     <div class="card-body">
                         <h5>Dead or Alive</h5>
@@ -323,7 +342,8 @@
                             src="https://www.youtube.com/embed/qzwwh2HZikY"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen title="Abomifighters trailer"></iframe>
+                            allowfullscreen title="Abomifighters trailer"
+                            loading="lazy"></iframe>
                 </div>
 
                 <!-- 4. What I built: one row per system, image and text swap sides each row -->
@@ -332,7 +352,8 @@
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/Abomifighters/Abomifighters_1.jpg"
-                                                      alt="A limb ability knocking an opponent back"/></span>
+                                                      alt="A limb ability knocking an opponent back"
+                                                      loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>Abilities with the Gameplay Ability System</h5>
@@ -351,7 +372,8 @@
                     </div>
                     <div class="projectimage">
                         <span class="image main"><img src="content/Abomifighters/Abomifighters_2.png"
-                                                      alt="The in-game HUD showing equipped limbs and cooldowns"/></span>
+                                                      alt="The in-game HUD showing equipped limbs and cooldowns"
+                                                      loading="lazy"/></span>
                     </div>
                 </div>
 
@@ -359,7 +381,7 @@
                     <div class="projectimage">
                         <!-- Using the existing key art here. Swap it if you find a better frame -->
                         <span class="image main"><img src="content/Abomifighters/Abomifighters_3.jpg"
-                                                      alt="Abomifighters key art"/></span>
+                                                      alt="Abomifighters key art" loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>Networked gameplay</h5>
@@ -375,8 +397,8 @@
                 -->
 
                 <!-- 6. About the game: short, at the bottom -->
-                <h4 class="section-title">About the game</h4>
-                <p class="about">Abomifighters is a multiplayer arena fighter built on Lyra in Unreal Engine 5.
+                <h4 class="section-title center">About the game</h4>
+                <p class="about closing">Abomifighters is a multiplayer arena fighter built on Lyra in Unreal Engine 5.
                     Players pick up limbs to fight each other, and each limb brings its own skill, so you build
                     your character as the match goes. The in-house MVP was shown at events and to publishers.</p>
 
@@ -429,7 +451,7 @@
                             src="https://www.youtube.com/embed/KqjFJ7zUCBQ"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen title="Slimando gameplay"></iframe>
+                            allowfullscreen title="Slimando gameplay" loading="lazy"></iframe>
                 </div>
 
                 <!-- 4. What I built -->
@@ -438,11 +460,12 @@
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/Slimando/Slimando_1.jpeg"
-                                                      alt="Several Slimando abilities combining on screen"/></span>
+                                                      alt="Several Slimando abilities combining on screen"
+                                                      loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>Data-driven skill system</h5>
-                        <p>Architected the skill system behind 60+ abilities. Abilities are composed from modular
+                        <p>Architected the skill system behind 60+ abilities. Abilities are composed of modular
                             effects, so new ones are mostly data, and they combine at runtime into synergies.</p>
                         <p class="tech">C# · ScriptableObjects · Modular effects</p>
                     </div>
@@ -457,14 +480,16 @@
                     </div>
                     <div class="projectimage">
                         <span class="image main"><img src="content/Slimando/Slimando_2.jpeg"
-                                                      alt="A screen full of enemies in Slimando"/></span>
+                                                      alt="A screen full of enemies in Slimando"
+                                                      loading="lazy"/></span>
                     </div>
                 </div>
 
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/Slimando/Slimando_3.jpeg"
-                                                      alt="Slimando ability selection"/></span>
+                                                      alt="Slimando ability selection"
+                                                      loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>Ability design &amp; balancing</h5>
@@ -481,14 +506,227 @@
                 -->
 
                 <!-- 6. About the game -->
-                <h4 class="section-title">About the game</h4>
-                <p class="about">Slimando started as a GameJamPlus 22/23 entry and qualified for the Grand Final.
+                <h4 class="section-title center">About the game</h4>
+                <p class="about closing">Slimando started as a GameJamPlus 22/23 entry and qualified for the Grand
+                    Final.
                     It's a top-down roguelite shooter where you build up a set of abilities over a run, and the
                     fun comes from how they stack and combine. It's playable for free on itch.io.</p>
 
             </div>
 
             <!-- 7. Back link -->
+            <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
+        </article>
+
+        <article id="promiseland">
+            <div class="game" title="promiseland">
+
+                <!-- 1. Title + one-line hook -->
+                <h3 style="text-align:center">PromiseLand <span
+                        style="font-size:0.6em;opacity:0.7">(working title)</span></h3>
+                <p class="hook">A creature-collector action game where you control both your tamer and your creature,
+                    battling wild creatures in real time.</p>
+
+                <!-- 2. Fact strip -->
+                <dl class="facts">
+                    <div>
+                        <dt>Role</dt>
+                        <dd>Gameplay Programmer (volunteer)</dd>
+                    </div>
+                    <div>
+                        <dt>Studio</dt>
+                        <dd>Mirage Studios (remote)</dd>
+                    </div>
+                    <div>
+                        <dt>When</dt>
+                        <dd>Jul 2025 – present</dd>
+                    </div>
+                    <div>
+                        <dt>Status</dt>
+                        <dd>In development · working title · prototype art</dd>
+                    </div>
+                    <div>
+                        <dt>Tech</dt>
+                        <dd>Unity 6 · C# · URP 2D</dd>
+                    </div>
+                    <div>
+                        <dt>Links</dt>
+                        <dd><a href="https://www.linkedin.com/company/mirage-studios-games/" target="_blank"
+                               rel="noopener">Mirage Studios</a></dd>
+                    </div>
+                </dl>
+
+                <!-- 3. Hero: your best clip. A skill with a proxy breaking on hit, or a fight with a few creatures -->
+                <span class="image main"><video data-src="content/PromiseLand/PromiseLand_Hero.mp4" data-autoplay loop
+                                                muted
+                                                playsinline
+                                                aria-label="A creature casting a skill in combat"></video></span>
+
+
+                <!-- 4. What I built -->
+                <h4 class="section-title">What I built</h4>
+
+                <!-- Row 1: Skill system -->
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><img src="content/PromiseLand/PromiseLand_SkillTimeline.png"
+                                                      alt="A skill timeline asset in the Unity inspector"
+                                                      loading="lazy"/></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>Timeline-based skill system</h5>
+                        <p>Every skill is a set of steps, and each step runs a timeline of timed events: animation,
+                            aim lock, movement and casting restrictions, dashes, VFX and SFX, and spawning proxies.
+                            Proxies are the projectiles and zones a skill leaves in the world. Each one runs its own
+                            timeline and reacts to a hit or to expiring, and proxies can spawn other proxies, so
+                            chained skills need no new code.</p>
+                        <p>The combat designer proposed the timeline approach. I built it, then made it
+                            designer-friendly with custom inspectors that list every event type through reflection.
+                            Creatures cast through the same pipeline as the player, so AI and players share every
+                            skill.</p>
+                        <p class="tech">C# · ScriptableObjects · SerializeReference · Custom editors</p>
+                    </div>
+                </div>
+
+                <!-- Code snippet for row 1 -->
+                <p class="tech">The runner: events fire at their time, and anything that lasts is always cleaned up,
+                    even when a skill is interrupted.</p>
+                <pre><code>IEnumerator TimelineCoroutine(SkillTimeline timeline, SkillContext ctx)
+{
+    float elapsed = 0;
+    foreach (SkillTimelineEvent e in timeline.GetTimelineEvents())
+    {
+        while (elapsed &lt; e.timing)
+        {
+            yield return null;
+            elapsed += Time.deltaTime;
+            CleanupExpired(elapsed);
+        }
+
+        e.Execute(ctx);
+
+        if (e is ILastingEvent lasting &amp;&amp; lasting.Duration &gt; 0f)
+            _activeEffects.Add(new ActiveEffect { SkillEvent = e, EndTime = e.timing + lasting.Duration });
+    }
+
+    while (_activeEffects.Count &gt; 0)
+    {
+        yield return null;
+        elapsed += Time.deltaTime;
+        CleanupExpired(elapsed);
+    }
+    OnTimelineComplete?.Invoke();
+}
+
+// Interrupting a skill cleans up everything still active,
+// so a creature can never be left rooted or with its aim locked.
+public void StopTimeline()
+{
+    CleanupAllActive();
+    StopAllCoroutines();
+}</code></pre>
+
+                <!-- Row 2: Creature AI -->
+                <div class="container">
+                    <div class="projecttext">
+                        <h5>Creature AI: context steering + state machine</h5>
+                        <p>Creatures score 16 directions every tick. Each steering behavior (seek, avoid, strafe,
+                            run away, NavMesh pathing) adds danger and interest, and a solver blends them into one
+                            direction. It moves more naturally than a plain NavMesh agent, each creature can be tuned
+                            to move its own way, and skills and stats can affect movement without fighting the
+                            pathfinding.</p>
+                        <p>A state machine (unaware, aware, aggressive) decides which behaviors are active. States
+                            never move the creature directly.</p>
+                        <p class="tech">C# · Context-based steering · NavMesh · FSM</p>
+                    </div>
+                    <div class="projectimage">
+                        <span class="image main"><video data-src="content/PromiseLand/PromiseLand_Steering.mp4"
+                                                        data-autoplay
+                                                        loop
+                                                        muted playsinline
+                                                        aria-label="Creature steering with danger and interest rays visible"></video></span>
+                    </div>
+                </div>
+
+                <!-- Code snippet for row 2 -->
+                <p class="tech">The solver: every behavior writes into the same two arrays, so adding a behavior never
+                    touches this code.</p>
+                <pre><code>public Vector2 GetDirectionToMove(List&lt;SteeringBehavior&gt; behaviors, AIData aiData)
+{
+    int count = Directions.sixteenDirections.Count;
+    float[] danger = new float[count];
+    float[] interest = new float[count];
+
+    foreach (SteeringBehavior behavior in behaviors)
+        (danger, interest) = behavior.GetSteering(danger, interest, aiData);
+
+    Vector2 output = Vector2.zero;
+    for (int i = 0; i &lt; count; i++)
+    {
+        interest[i] = Mathf.Clamp01(interest[i] - danger[i]);
+        output += Directions.sixteenDirections[i] * interest[i];
+    }
+
+    return output == Vector2.zero ? output : output.normalized;
+}</code></pre>
+
+                <!-- Row 3: Capture -->
+                <div class="container">
+                    <div class="projectimage">
+                        <span class="image main"><video data-src="content/PromiseLand/PromiseLand_Catching.mp4"
+                                                        data-autoplay loop
+                                                        muted playsinline
+                                                        aria-label="Throwing the catching tool at a creature"></video></span>
+                    </div>
+                    <div class="projecttext">
+                        <h5>Capture</h5>
+                        <p>Built the capture system from the design spec. The tamer throws a catching tool along a
+                            curved arc. Each hit stuns the creature and chips its breakbar, then the tool bounces away
+                            and homes back in for another hit. When the breakbar breaks, the creature is yours and goes
+                            into your party, or into storage if the party is full.</p>
+                        <p>Also built getting creatures back out of storage and creature ownership, on top of a
+                            storage system by another programmer.</p>
+                        <p class="tech">C# · Animation curves · State machine</p>
+                    </div>
+                </div>
+
+                <!-- Row 4: Spawning -->
+                <div class="container">
+                    <div class="projecttext">
+                        <h5>Spawning</h5>
+                        <p>Spawn areas wake up when the player walks in. Each one has a weighted table with a level
+                            range per creature, and groups spawn in a ring whose radius grows with the group size, so
+                            bigger groups never stack on top of each other.</p>
+                        <p class="tech">C# · Weighted tables</p>
+                    </div>
+                    <div class="projectimage">
+                        <span class="image main"><video data-src="content/PromiseLand/PromiseLand_Spawning.mp4"
+                                                        data-autoplay loop
+                                                        muted playsinline
+                                                        aria-label="A group of creatures spawning as the player enters an area"></video></span>
+                    </div>
+                </div>
+
+                <!-- 5. A problem I solved -->
+                <h4 class="section-title">A problem I solved</h4>
+                <div class="problem">
+                    <p><strong>The problem</strong>Creatures chasing a target on the other side of a wall would jitter,
+                        then stop dead against it.</p>
+                    <p><strong>Why</strong>The direction to the target scored high interest, but the wall in that same
+                        direction scored high danger. Subtracting one from the other cancelled them out, leaving no good
+                        direction to pick.</p>
+                    <p><strong>The fix</strong>A NavMesh steering behavior that feeds the next corner of a path in as
+                        the interest, instead of the target itself. Creatures now aim around walls rather than at them.
+                    </p>
+                </div>
+
+                <h4 class="section-title center">About the game</h4>
+                <p class="about closing">PromiseLand (working title) is a creature-collector action game in development
+                    at Mirage Studios. You control both your tamer and your creature, catching new creatures and
+                    battling others in real time with their skills. Shown with the studio's permission.</p>
+
+            </div>
+
             <p class="back"><a href="#projects" class="button">← Back to projects</a></p>
         </article>
 
@@ -530,13 +768,13 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ddJeQcolbik"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen title="Ziniax Warriors trailer"></iframe>
+                            allowfullscreen title="Ziniax Warriors trailer" loading="lazy"></iframe>
                 </div>
 
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/Ziniax/Ziniax_2.jpeg"
-                                                      alt="Ziniax Warriors gameplay"/></span>
+                                                      alt="Ziniax Warriors gameplay" loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>What I did</h5>
@@ -586,13 +824,13 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/gzhhMC6ExSM"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen title="Celestial Odyssey trailer"></iframe>
+                            allowfullscreen title="Celestial Odyssey trailer" loading="lazy"></iframe>
                 </div>
 
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/Celestial/Celestial_1.jpeg"
-                                                      alt="Celestial Odyssey gameplay"/></span>
+                                                      alt="Celestial Odyssey gameplay" loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>What I did</h5>
@@ -642,13 +880,13 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/sp_20eBiURk"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen title="RadSquad trailer"></iframe>
+                            allowfullscreen title="RadSquad trailer" loading="lazy"></iframe>
                 </div>
 
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/RadSquad/RadSquad_2.jpeg"
-                                                      alt="RadSquad gameplay"/></span>
+                                                      alt="RadSquad gameplay" loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>What I did</h5>
@@ -698,13 +936,13 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/0G5B_LLNkHY"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen title="Scrapbots trailer"></iframe>
+                            allowfullscreen title="Scrapbots trailer" loading="lazy"></iframe>
                 </div>
 
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/ScrapBots/ScrapBots_1.jpeg"
-                                                      alt="Scrap Bots robot building"/></span>
+                                                      alt="Scrap Bots robot building" loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>What I did</h5>
@@ -748,13 +986,13 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/9S-1x4A5JcQ"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen title="Knightmare demo"></iframe>
+                            allowfullscreen title="Knightmare demo" loading="lazy"></iframe>
                 </div>
 
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/Knightmare/Knightmare_2.jpeg"
-                                                      alt="Knightmare gameplay"/></span>
+                                                      alt="Knightmare gameplay" loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>What I did</h5>
@@ -802,12 +1040,13 @@
                 </dl>
 
                 <span class="image main"><img src="content/AroundUs/AroundUs_2.png"
-                                              alt="Around Us: watching the crew through the ship's cameras"/></span>
+                                              alt="Around Us: watching the crew through the ship's cameras"
+                                              loading="lazy"/></span>
 
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/AroundUs/AroundUs_3.png"
-                                                      alt="Around Us gameplay"/></span>
+                                                      alt="Around Us gameplay" loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>What I did</h5>
@@ -854,12 +1093,14 @@
                     </div>
                 </dl>
 
-                <span class="image main"><img src="content/Splitsoul/Split_2.png" alt="SplitSoul gameplay"/></span>
+                <span class="image main"><img src="content/Splitsoul/Split_2.png" alt="SplitSoul gameplay"
+                                              loading="lazy"/></span>
 
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/Splitsoul/Split_3.png"
-                                                      alt="SplitSoul dialogue or driving minigame"/></span>
+                                                      alt="SplitSoul dialogue or driving minigame"
+                                                      loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>What I did</h5>
@@ -905,12 +1146,13 @@
                     </div>
                 </dl>
 
-                <span class="image main"><img src="content/Deflecto/Deflecto_1.png" alt="Deflecto gameplay"/></span>
+                <span class="image main"><img src="content/Deflecto/Deflecto_1.png" alt="Deflecto gameplay"
+                                              loading="lazy"/></span>
 
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/Deflecto/Deflecto_2.png"
-                                                      alt="Deflecto colour wheel in action"/></span>
+                                                      alt="Deflecto colour wheel in action" loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>What I did</h5>
@@ -954,12 +1196,13 @@
                     </div>
                 </dl>
 
-                <span class="image main"><img src="content/Hydropop/Hydro_1.png" alt="Hydropop gameplay"/></span>
+                <span class="image main"><img src="content/Hydropop/Hydro_1.png" alt="Hydropop gameplay"
+                                              loading="lazy"/></span>
 
                 <div class="container">
                     <div class="projectimage">
                         <span class="image main"><img src="content/Hydropop/Hydro_2.png"
-                                                      alt="Hydropop during an event"/></span>
+                                                      alt="Hydropop during an event" loading="lazy"/></span>
                     </div>
                     <div class="projecttext">
                         <h5>What I did</h5>
@@ -1016,10 +1259,9 @@
         <article id="CV">
             <h2 class="major">CV</h2>
 
-            <center>
-                <embed src="https://drive.google.com/file/d/1ZO7YFga45FZdemozlO2WkaBdA722VVQb/preview"
-                       width="100%" height="1100px">
-            </center>
+            <iframe src="https://drive.google.com/file/d/1ZO7YFga45FZdemozlO2WkaBdA722VVQb/preview"
+                    width="100%" height="1100" style="border:0" loading="lazy"
+                    title="Tomás Sousa CV"></iframe>
 
             <p style="text-align: center;">
                 <a href="https://drive.google.com/file/d/1ZO7YFga45FZdemozlO2WkaBdA722VVQb/view?usp=sharing"
