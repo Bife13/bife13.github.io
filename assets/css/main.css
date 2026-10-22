@@ -1936,7 +1936,7 @@ body.is-preload #footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1px;
-    background: rgba(255, 255, 255, 0.15);   /* shows through the gaps as thin lines */
+    background: rgba(255, 255, 255, 0.15); /* shows through the gaps as thin lines */
     border: solid 1px rgba(255, 255, 255, 0.15);
     border-radius: 4px;
     overflow: hidden;
@@ -1944,7 +1944,7 @@ body.is-preload #footer {
 }
 
 .game .facts > div {
-    background: #1b1f22;                      /* same as the article background */
+    background: #1b1f22; /* same as the article background */
     padding: 0.9rem 1.1rem;
 }
 
@@ -1958,7 +1958,7 @@ body.is-preload #footer {
 }
 
 .game .facts dd {
-    margin: 0;                                 /* "dl dd" above indents it by default */
+    margin: 0; /* "dl dd" above indents it by default */
     font-weight: 600;
 }
 
@@ -2107,7 +2107,7 @@ article .back {
     display: flex;
     flex-direction: column;
     border: solid 1px rgba(255, 255, 255, 0.15);
-    border-bottom: solid 1px rgba(255, 255, 255, 0.15);  /* overrides the dotted link underline */
+    border-bottom: solid 1px rgba(255, 255, 255, 0.15); /* overrides the dotted link underline */
     border-radius: 4px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.03);
@@ -2214,8 +2214,8 @@ article .back {
 }
 
 :root {
-    --accent: #DF0050;        /* exact CV pink: borders, hover */
-    --accent-text: #FF4D8A;   /* lighter tint for small text, readable on dark */
+    --accent: #DF0050; /* exact CV pink: borders, hover */
+    --accent-text: #FF4D8A; /* lighter tint for small text, readable on dark */
 }
 
 /* Section labels and fact-strip labels */
@@ -2269,7 +2269,9 @@ article .back {
     }
 }
 
-#header nav.use-middle:after { display: none; }
+#header nav.use-middle:after {
+    display: none;
+}
 
 .game pre {
     margin: 0 0 2.5rem 0;
@@ -2293,10 +2295,12 @@ article .back {
     border-radius: 4px;
     margin: 0 0 1rem 0;
 }
+
 .game .problem p {
     margin: 0;
     line-height: 1.7;
 }
+
 .game .problem strong {
     display: block;
     color: var(--accent-text);
@@ -2306,7 +2310,10 @@ article .back {
     margin-bottom: 0.5rem;
 }
 
-.game .section-title.center { text-align: center; }
+.game .section-title.center {
+    text-align: center;
+}
+
 .game .about.closing {
     text-align: center;
     max-width: 40rem;
@@ -2326,4 +2333,17 @@ article .back {
     width: 100%;
     display: block;
     border-radius: 4px;
+}
+
+.game .image.main video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* Stops wide media from pushing a grid column wider than the screen */
+.game .container > * {
+    min-width: 0;
 }
